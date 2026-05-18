@@ -25,13 +25,13 @@ int main() {
     printf("Digite o Estado (A-H): ");
     scanf(" %c", &estado1); 
     
-    printf("Digite o Codigo da Carta (Ex: A01): ");
+    printf("Digite o Codigo da Carta : ");
     scanf("%s \n", codigo1);
     
     printf("Digite o Nome da Cidade: ");
-    scanf(" %[^\n]s", cidade1); 
+    scanf(" %[^\n]s ", cidade1); 
     
-    printf("Digite a Populacao: ");
+    printf("Digite a Populacao: \n");
     scanf("%d", &populacao1);
     
     printf("Digite a Area (em km²): ");
