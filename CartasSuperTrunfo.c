@@ -26,14 +26,14 @@ int main() {
     // ================= CALASTRO DA CARTA 1 =================
     printf("=== CADASTRO DA CARTA 1 ===\n");
     
-    printf("Digite o Estado (A-H): ");
+    printf("Digite o Estado (A-H): \n");
     scanf(" %c", &estado1); 
     
     printf("Digite o Codigo da Carta (Ex A1): \n");
-    scanf("%s \n", codigo1);
+    scanf(" %3s", codigo1);
     
-    printf("Digite o Nome da Cidade: ");
-    scanf(" %[^\n]s ", cidade1); 
+    printf("Digite o Nome da Cidade: \n");
+    scanf(" %[^\n]", cidade1); 
     
     printf("Digite a Populacao: \n");
     scanf("%d", &populacao1);
@@ -46,6 +46,9 @@ int main() {
     
     printf("Digite o Numero de Pontos Turisticos: \n");
     scanf("%d", &pontosTuristicos1);
+
+    printf("Densidade Populacional: \n", densidadepopular);
+    scanf("%f", &densidadepopular);
     printf("\n");
 
     // ================= CADASTRO DA CARTA 2 =================
@@ -55,10 +58,10 @@ int main() {
     scanf(" %c", &estado2);
     
     printf("Digite o Codigo da Carta (Ex: B02): ");
-    scanf("%s \n", codigo2);
+    scanf(" %3s", codigo2);
     
     printf("Digite o Nome da Cidade: ");
-    scanf(" %[^\n]s", cidade2);
+    scanf(" %[^\n]", cidade2);
     
     printf("Digite a Populacao: ");
     scanf("%d", &populacao2);
@@ -72,7 +75,9 @@ int main() {
     printf("Digite o Numero de Pontos Turisticos: \n");
     scanf("%d", &pontosTuristicos2);
     printf("\n");
-
+    
+    printf("Densidade Populacional: \n", densidadepopular);
+    scanf("%f", &densidadepopular);
     // Sera inseridos os dados para calculos dos dados
 
     densidadepopular = (float)populacao1 / area1;
@@ -90,7 +95,7 @@ int main() {
     printf("Nome da Cidade: %s\n", cidade1);
     printf("Populacao: %d\n", populacao1);
     printf("Area: %.2f km²\n", area1); 
-    printf("PIB: %.2f bilhoes de reais\n", pib2);
+    printf("PIB: %.2f bilhoes de reais\n", pib1);
     printf("Numero de Pontos Turisticos: %d\n\n", pontosTuristicos1);
     printf("Densidade Populacional: %.2f hab/km²\n", densidadepopular);
     printf("PIB per capita R$: %.2f\n\n", pibpercapita);
